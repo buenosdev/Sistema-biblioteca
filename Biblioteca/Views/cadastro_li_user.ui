@@ -10,6 +10,12 @@
     <height>622</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>808</width>
+    <height>622</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -69,7 +75,7 @@
          <property name="font">
           <font>
            <family>Bonello,regular</family>
-           <pointsize>30</pointsize>
+           <pointsize>25</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -107,7 +113,7 @@
         </spacer>
        </item>
        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-        <widget class="QPushButton" name="button2">
+        <widget class="QPushButton" name="btnCad_User">
          <property name="styleSheet">
           <string notr="true">  background:white;
 letter-spacing: .2rem;
@@ -149,7 +155,7 @@ letter-spacing: .2rem;
          <property name="font">
           <font>
            <family>Bonello,regular</family>
-           <pointsize>30</pointsize>
+           <pointsize>25</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -184,7 +190,7 @@ letter-spacing: .2rem;
         </spacer>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="button">
+        <widget class="QPushButton" name="btnCad_Livro">
          <property name="styleSheet">
           <string notr="true">  background:white;
 letter-spacing: .2rem;
@@ -218,6 +224,77 @@ letter-spacing: .2rem;
          </property>
         </spacer>
        </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <family>Bonello,regular</family>
+           <pointsize>25</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">  font-family: 'Bonello', regular;
+  font-weight: bold;
+  letter-spacing: .2rem;</string>
+         </property>
+         <property name="text">
+          <string>Empréstimo Livro</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QPushButton" name="btnEmprestimo">
+         <property name="styleSheet">
+          <string notr="true">  background:white;
+letter-spacing: .2rem;
+  color: black; /* Texto branco */
+  font-family: 'Betty', regular;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px; /* Tamanho do botão */
+  border: none; /* Remove bordas padrão */
+
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: all 0.3s ease-in-out; /* Animação suave */</string>
+         </property>
+         <property name="text">
+          <string>Entrar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
      </item>
      <item>
@@ -236,7 +313,6 @@ letter-spacing: .2rem;
     </layout>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

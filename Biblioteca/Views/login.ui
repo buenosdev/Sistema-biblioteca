@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>797</width>
-    <height>623</height>
+    <width>802</width>
+    <height>642</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>802</width>
+    <height>642</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -32,10 +38,13 @@
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>40</height>
+         <height>30</height>
         </size>
        </property>
       </spacer>
@@ -94,7 +103,7 @@
             <set>Qt::ImhNone</set>
            </property>
            <property name="text">
-            <string>Área de Cadastro de Livro</string>
+            <string>Login Admin</string>
            </property>
            <property name="scaledContents">
             <bool>false</bool>
@@ -105,72 +114,17 @@
           </widget>
          </item>
          <item>
-          <spacer name="verticalSpacer_3">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>15</width>
-             <height>70</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item alignment="Qt::AlignHCenter">
-          <widget class="QLabel" name="label_17">
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Bonello,regular</family>
-             <pointsize>-1</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">  font-family: 'Bonello', regular;
-  font-size: 16px;</string>
-           </property>
-           <property name="text">
-            <string>Titulo</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_4">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>25</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit">
-           <property name="styleSheet">
-            <string notr="true">background-color:white;
-border-radius: 2px;
-border: none;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
           <spacer name="verticalSpacer_5">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>25</height>
+             <height>100</height>
             </size>
            </property>
           </spacer>
@@ -191,10 +145,10 @@ border: none;</string>
            </property>
            <property name="styleSheet">
             <string notr="true">  font-family: 'Bonello', regular;
-  font-size: 16px;</string>
+  font-size: 20px;</string>
            </property>
            <property name="text">
-            <string>Autor</string>
+            <string>Email</string>
            </property>
           </widget>
          </item>
@@ -202,6 +156,9 @@ border: none;</string>
           <spacer name="verticalSpacer_6">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -212,11 +169,13 @@ border: none;</string>
           </spacer>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_2">
+          <widget class="QLineEdit" name="inputEmail">
            <property name="styleSheet">
             <string notr="true">background-color:white;
 border-radius: 2px;
-border: none;</string>
+border: none;
+width:300px;
+height: 30px</string>
            </property>
           </widget>
          </item>
@@ -225,10 +184,13 @@ border: none;</string>
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>25</height>
+             <height>50</height>
             </size>
            </property>
           </spacer>
@@ -249,10 +211,10 @@ border: none;</string>
            </property>
            <property name="styleSheet">
             <string notr="true">  font-family: 'Bonello', regular;
-  font-size: 16px;</string>
+  font-size: 20px;</string>
            </property>
            <property name="text">
-            <string>Genero</string>
+            <string>Senha</string>
            </property>
           </widget>
          </item>
@@ -261,6 +223,9 @@ border: none;</string>
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
@@ -269,12 +234,14 @@ border: none;</string>
            </property>
           </spacer>
          </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_3">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLineEdit" name="inputSenha">
            <property name="styleSheet">
             <string notr="true">background-color:white;
 border-radius: 2px;
-border: none;</string>
+border: none;
+width:300px;
+height: 30px</string>
            </property>
           </widget>
          </item>
@@ -283,6 +250,9 @@ border: none;</string>
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
@@ -290,69 +260,6 @@ border: none;</string>
             </size>
            </property>
           </spacer>
-         </item>
-         <item alignment="Qt::AlignHCenter">
-          <widget class="QLabel" name="label_20">
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Bonello,regular</family>
-             <pointsize>-1</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">  font-family: 'Bonello', regular;
-  font-size: 16px;</string>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="lineWidth">
-            <number>1</number>
-           </property>
-           <property name="text">
-            <string>Código</string>
-           </property>
-           <property name="textFormat">
-            <enum>Qt::AutoText</enum>
-           </property>
-           <property name="scaledContents">
-            <bool>false</bool>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-           </property>
-           <property name="indent">
-            <number>-1</number>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_10">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>25</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_4">
-           <property name="styleSheet">
-            <string notr="true">background-color:white;
-border-radius: 2px;
-border: none;</string>
-           </property>
-          </widget>
          </item>
         </layout>
        </item>
@@ -371,31 +278,67 @@ border: none;</string>
        </item>
       </layout>
      </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="label_20">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bonello,regular</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">  font-family: 'Bonello', regular;
+  font-size: 16px;</string>
+       </property>
+       <property name="text">
+        <string>Não tem login? Cadastre-se:</string>
+       </property>
+      </widget>
+     </item>
      <item>
-      <spacer name="verticalSpacer_11">
+      <spacer name="verticalSpacer_12">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>55</height>
+         <height>30</height>
         </size>
        </property>
       </spacer>
      </item>
-     <item alignment="Qt::AlignHCenter">
-      <widget class="QPushButton" name="button">
-       <property name="font">
-        <font>
-         <family>Betty,regular</family>
-         <pointsize>-1</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">  background:white;
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>200</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QPushButton" name="btnEntrar">
+         <property name="styleSheet">
+          <string notr="true">  background:white;
 letter-spacing: .2rem;
   color: black; /* Texto branco */
   font-family: 'Betty', regular;
@@ -408,24 +351,67 @@ letter-spacing: .2rem;
   cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   transition: all 0.3s ease-in-out; /* Animação suave */</string>
-       </property>
-       <property name="text">
-        <string>Salvar</string>
-       </property>
-      </widget>
+         </property>
+         <property name="text">
+          <string>Entrar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QPushButton" name="btnCadastrar">
+         <property name="styleSheet">
+          <string notr="true">  background:white;
+letter-spacing: .2rem;
+  color: black; /* Texto branco */
+  font-family: 'Betty', regular;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px; /* Tamanho do botão */
+  border: none; /* Remove bordas padrão */
+
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: all 0.3s ease-in-out; /* Animação suave */</string>
+         </property>
+         <property name="text">
+          <string>Cadastro</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>200</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
      </item>
      <item>
-      <spacer name="verticalSpacer">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
+      <layout class="QVBoxLayout" name="verticalLayout_3"/>
      </item>
     </layout>
    </widget>
